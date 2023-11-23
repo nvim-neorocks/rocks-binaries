@@ -26,12 +26,10 @@ jobs:
       - name: Install Luarocks
         uses: hishamhm/gh-actions-luarocks@master
       - name: Install `luarocks-build-rust-mlua` Package
-        id: luarocks-build-rust-mlua
         run: |
           luarocks --local --lua-version=5.1 install luarocks-build-rust-mlua
-          echo "version=$(luarocks --local --lua-version=5.1 show luarocks-bulid-rust-mlua --mversion)" >> $GITHUB_OUTPUT
           luarocks pack luarocks-build-rust-mlua
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: update build artifacts"
-          file_pattern: "luarocks-build-rust-mlua-${{ steps.luarocks-build-rust-mlua.outputs.version }}.${{ matrix.os.host }}-x86_64.rock"
+          file_pattern: "*.rock"
