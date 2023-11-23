@@ -6,8 +6,8 @@ jobs:
   build:
     runs-on: ${{ matrix.os.host }}
     strategy:
+      max-parallel: 1
       matrix:
-        max-parallel: 1
         os:
           - host: ubuntu-20.04
           - host: windows-2019
