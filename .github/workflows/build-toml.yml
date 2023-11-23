@@ -18,7 +18,7 @@ jobs:
           luaVersion: "5.1"
       - name: Add Lua to Path
         run:
-          echo ".lua" >> $GITHUB_PATH
+          echo "$PWD/.lua" >> $GITHUB_PATH
       - name: Install Luarocks
         uses: actions/checkout@v4
         with:
