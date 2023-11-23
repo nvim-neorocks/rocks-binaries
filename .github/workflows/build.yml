@@ -40,7 +40,8 @@ jobs:
       - name: Install `luarocks-build-rust-mlua` for use by Luarocks
         if: runner.os == 'Windows'
         run: |
-          luarocks --local install luarocks-build-rust-mlua
+          # There sees to be a bug on Windows where luarocks looks for a lua 5.4 installation
+          luarocks --local install --lua-version=5.4 luarocks-build-rust-mlua
       - name: Ensure dev tools are installed
         if: runner.os == 'macOS'
         run: |
