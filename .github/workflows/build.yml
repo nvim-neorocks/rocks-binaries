@@ -6,7 +6,6 @@ jobs:
   build:
     runs-on: ${{ matrix.os.host }}
     strategy:
-      max-parallel: 1
       matrix:
         os:
           - host: ubuntu-20.04
