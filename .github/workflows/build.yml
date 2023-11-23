@@ -38,8 +38,13 @@ jobs:
           luarocks --local --lua-version=5.1 install toml
           luarocks pack toml
       - name: Install `luarocks-build-rust-mlua` for use by Luarocks
+        if: runner.os == 'Windows'
         run: |
           luarocks --local install luarocks-build-rust-mlua
+      - name: Ensure dev tools are installed
+        if: runner.os == 'macOS'
+        run: |
+          xcode-select --install
       - name: Install `toml-edit` Package
         run: |
           luarocks --local --lua-version=5.1 install toml-edit
