@@ -40,9 +40,7 @@ jobs:
           #     luarocks --local --lua-version=5.1 install toml-edit
           #     luarocks pack toml-edit
       - uses: actions/checkout@v4
-        with:
-          lfs: true
-          clean: false
+        ref: ${{ github.ref }}
       - name: Regenerate Manifests and HTML
         run: luarocks-admin make-manifest --lua-version=5.1 .
       - uses: stefanzweifel/git-auto-commit-action@v5
