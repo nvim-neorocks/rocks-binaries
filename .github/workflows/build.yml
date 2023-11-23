@@ -23,6 +23,14 @@ jobs:
         uses: ilammy/msvc-dev-cmd@v1
       - name: Install Rust Toolchain
         uses: actions-rust-lang/setup-rust-toolchain@v1
+        if: runner.os != 'macOS'
+      - name: Install Rust Toolchain (macos)
+        uses: actions-rust-lang/setup-rust-toolchain@v1
+        if: runner.os == 'macOS'
+        with:
+          rustflags: "-C link-arg=-undefined -C link-arg=dynamic_lookup"
+      - name: Install Rust Toolchain
+        uses: actions-rust-lang/setup-rust-toolchain@v1
       - name: Install Lua
         uses: leso-kn/gh-actions-lua@master
         with:
