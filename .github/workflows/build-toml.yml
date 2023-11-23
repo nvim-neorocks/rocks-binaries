@@ -16,9 +16,6 @@ jobs:
         uses: leafo/gh-actions-lua@v10
         with:
           luaVersion: "5.1"
-      - name: Add Lua to Path
-        run:
-          echo "$PWD/.lua" >> $GITHUB_PATH
       - name: Install Luarocks
         uses: actions/checkout@v4
         with:
@@ -26,7 +23,7 @@ jobs:
           repository: luarocks/luarocks
       - name: Configure and Install Luarocks
         run: |
-          ./configure --prefix=$HOME/rocks/ --lua-version=5.1 --force-config
+          ./configure --prefix=$HOME/rocks/ --lua-version=5.1 --force-config --with-lua=$PWD/.lua
           make install
       - name: Install TOML Package
         run: |
