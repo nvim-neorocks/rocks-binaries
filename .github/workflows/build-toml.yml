@@ -17,18 +17,11 @@ jobs:
         with:
           luaVersion: "5.1"
       - name: Install Luarocks
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
-          repository: luarocks/luarocks
-      - name: Configure and Install Luarocks
-        run: |
-          ./configure --prefix=$HOME/rocks/ --lua-version=5.1 --force-config --with-lua=$PWD/.lua
-          make install
+        uses: leafo/gh-actions-luarocks@v4
       - name: Install TOML Package
         run: |
-          ./rocks/bin/luarocks --local install toml
-          ./rocks/bin/luarocks pack toml
+          luarocks --local install toml
+          luarocks pack toml
       - uses: actions/upload-artifact@v3
         with:
           name: output
