@@ -19,11 +19,11 @@ jobs:
       - name: Install MSVC Compiler Toolchain
         uses: ilammy/msvc-dev-cmd@v1
       - name: Install Lua
-        uses: hishamhm/gh-actions-luarocks@master
+        uses: leso-kn/gh-actions-lua@master
         with:
           luaVersion: "5.1"
       - name: Install Luarocks
-        uses: leafo/gh-actions-luarocks@v4
+        uses: hishamhm/gh-actions-luarocks@master
       - name: Install TOML Package
         run: |
           luarocks --local install toml
