@@ -21,7 +21,7 @@ jobs:
         if: ${{ matrix.os.host }} == "windows-2019"
         uses: ilammy/msvc-dev-cmd@v1
       - name: Install Lua
-        uses: hishamhm/gh-actions-luarocks
+        uses: hishamhm/gh-actions-luarocks@master
         with:
           luaVersion: "5.1"
       - name: Install Luarocks
