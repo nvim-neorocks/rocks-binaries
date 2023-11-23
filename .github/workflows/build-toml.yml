@@ -1,6 +1,6 @@
 name: CI
 
-on: [workflow_dispatch]
+on: [push, workflow_dispatch]
 
 jobs:
   test:
@@ -12,6 +12,10 @@ jobs:
           - host: windows-2019
           - host: macos-11
     steps:
+      - name: Install C/C++ Compiler
+        uses: rlalik/setup-cpp-compiler@master
+        with:
+          compiler: clang-latest
       - name: Install Lua
         uses: leafo/gh-actions-lua@v10
         with:
