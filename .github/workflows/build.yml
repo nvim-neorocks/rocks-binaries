@@ -7,11 +7,13 @@ jobs:
     runs-on: ${{ matrix.os.host }}
     strategy:
       matrix:
+        max-parallel: 1
         os:
           - host: ubuntu-20.04
           - host: windows-2019
           - host: macos-11
     steps:
+      - uses: actions/checkout@v4
       - name: Install C/C++ Compiler
         uses: rlalik/setup-cpp-compiler@master
         with:
@@ -38,10 +40,6 @@ jobs:
           #   run: |
           #     luarocks --local --lua-version=5.1 install toml-edit
           #     luarocks pack toml-edit
-      - uses: actions/checkout@v4
-        with:
-          ref: "main"
-          clean: false
       - name: Regenerate Manifests and HTML
         run: luarocks-admin make-manifest --lua-version=5.1 .
       - uses: stefanzweifel/git-auto-commit-action@v5
