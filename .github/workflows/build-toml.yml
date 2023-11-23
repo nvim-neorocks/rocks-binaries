@@ -15,7 +15,7 @@ jobs:
       - name: Install Lua
         uses: leafo/gh-actions-lua@v10
         with:
-          luaVersion: "luajit-2.0.5"
+          luaVersion: "lua-5.1"
       - name: Install Luarocks
         uses: actions/checkout@v4
         with:
