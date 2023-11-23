@@ -1,0 +1,35 @@
+name: CI
+
+on: [workflow_dispatch]
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os.host }}
+    strategy:
+      matrix:
+        os:
+          - host: ubuntu-20.04
+          - host: windows-2019
+          - host: macos-11
+    steps:
+      - name: Install Lua
+        uses: leafo/gh-actions-lua@v10
+        with:
+          luaVersion: "luajit-2.0.5"
+      - name: Install Luarocks
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          repository: https://github.com/luarocks/luarocks
+      - name: Configure and Install Luarocks
+        run: |
+          ./configure --prefix=$HOME/rocks/ --lua-version=5.1 --force-config
+          make install
+      - name: Install TOML Package
+        run: |
+          ./rocks/bin/luarocks --local install toml
+          ./rocks/bin/luarocks pack toml
+      - uses: actions/upload-artifact@v3
+        with:
+          name: output
+          path: *.rock
