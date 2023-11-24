@@ -43,16 +43,16 @@ jobs:
         if: runner.os == 'Windows'
       - name: Install `luarocks-build-rust-mlua` Package
         run: |
-          luarocks --local --lua-version=5.1 install luarocks-build-rust-mlua
-          luarocks pack luarocks-build-rust-mlua
+          luarocks --verbose --local --lua-version=5.1 install luarocks-build-rust-mlua
+          luarocks --verbose pack luarocks-build-rust-mlua
       - name: Install TOML Package
         run: |
-          luarocks --local --lua-version=5.1 install toml
-          luarocks pack toml
+          luarocks --verbose --local --lua-version=5.1 install toml
+          luarocks --verbose pack toml
       - name: Install `toml-edit` Package
         run: |
-          luarocks --local --lua-version=5.1 install toml-edit
-          luarocks pack toml-edit
+          luarocks --verbose --local --lua-version=5.1 install toml-edit
+          luarocks --verbose pack toml-edit
       - name: Regenerate Manifests and HTML
         run: luarocks-admin make-manifest --lua-version=5.1 .
       - uses: stefanzweifel/git-auto-commit-action@v5
