@@ -55,6 +55,12 @@ jobs:
         run: |
           luarocks --verbose --local --lua-version=5.1 install toml
           luarocks --verbose pack toml
+      - name: Non-local Install `toml-edit` Package
+        run: |
+          luarocks --lua-version=5.1 install luarocks-build-rust-mlua
+          luarocks --lua-version=5.1 install toml-edit
+          luarocks pack toml-edit
+        if: runner.os == 'Windows'
       - name: Install `toml-edit` Package
         run: |
           luarocks --verbose --local --lua-version=5.1 install toml-edit
