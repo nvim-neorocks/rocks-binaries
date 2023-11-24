@@ -38,7 +38,6 @@ jobs:
           luaVersion: "5.1"
       - name: Install Luarocks
         uses: hishamhm/gh-actions-luarocks@master
-        if: runner.os == 'Windows'
       - name: Fix LUA_PATH and LUA_CPATH (Windows)
         # TODO: Fix this upstream
         run: |
