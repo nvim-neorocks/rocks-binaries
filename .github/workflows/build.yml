@@ -42,7 +42,7 @@ jobs:
         # TODO: Fix this upstream
         run: |
           echo "LUA_PATH=/c/Users/runneradmin/AppData/Roaming/luarocks/share/lua/5.1/?.lua:/c/Users/runneradmin/AppData/Roaming/luarocks/share/lua/5.1/?/init.lua" >> $env:GITHUB_ENV
-          echo "LUA_CPATH=/c/Users/runneradmin/AppData/Roaming/luarocks/lib/lua/5.1/?.dll >> $env:GITHUB_ENV
+          echo "LUA_CPATH=/c/Users/runneradmin/AppData/Roaming/luarocks/lib/lua/5.1/?.dll" >> $env:GITHUB_ENV
         if: runner.os == 'Windows'
       - name: Print environment
         run: |
