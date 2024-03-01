@@ -10,8 +10,8 @@ on:
 
 # Prevent concurrent auto-commits
 concurrency:
-  group: auto-commit
-  cancel-in-progress: false
+  group: auto-commit-macosx-x86_64
+  cancel-in-progress: true
 
 jobs:
   build:
