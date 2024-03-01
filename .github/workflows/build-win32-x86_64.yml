@@ -49,6 +49,10 @@ jobs:
         run: |
           luarocks --verbose --local --lua-version=5.1 install toml-edit
           luarocks --verbose pack toml-edit
+      - name: Install `fzy` Package
+        run: |
+          luarocks --verbose --local --lua-version=5.1 install fzy
+          luarocks --verbose pack fzy
       - name: Regenerate Manifests and HTML
         run: luarocks-admin make-manifest --lua-version=5.1 .
       - name: commit-win32-x86_64
