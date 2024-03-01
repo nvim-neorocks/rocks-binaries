@@ -31,6 +31,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -41,6 +44,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    }
