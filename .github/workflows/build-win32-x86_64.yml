@@ -5,6 +5,7 @@ on: [push, workflow_dispatch]
 # Prevent concurrent auto-commits
 concurrency:
   group: auto-commit
+  cancel-in-progress: false
 
 jobs:
   build:
