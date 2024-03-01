@@ -1,11 +1,16 @@
 name: Build macosx-aarch64 dependencies
 
-on: [push, workflow_dispatch]
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Build linux-x86_64 dependencies"]
+    branches: [main]
+    types: 
+      - completed
 
 jobs:
   build:
     runs-on: macos-14
-    needs: commit-linux-x86_64
     steps:
       - uses: actions/checkout@v4
         with:
