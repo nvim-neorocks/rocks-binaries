@@ -1,4 +1,4 @@
-name: Build Dependencies
+name: Build win32-x86_64 dependencies
 
 on: [push, workflow_dispatch]
 
