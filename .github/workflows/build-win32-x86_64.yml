@@ -4,15 +4,8 @@ on: [push, workflow_dispatch]
 
 jobs:
   build:
-    runs-on: ${{ matrix.os.host }}
-    strategy:
-      max-parallel: 1
-      matrix:
-        os:
-          - host: ubuntu-20.04
-          - host: macos-14
-          - host: macos-11
-          - host: windows-2019
+    runs-on: windows-2019
+    needs: commit-macosx-x86_64
     steps:
       - uses: actions/checkout@v4
         with:
@@ -25,26 +18,12 @@ jobs:
         uses: ilammy/msvc-dev-cmd@v1
       - name: Install Rust Toolchain
         uses: actions-rust-lang/setup-rust-toolchain@v1
-        if: runner.os != 'macOS'
-      - name: Install Rust Toolchain (macos)
-        uses: actions-rust-lang/setup-rust-toolchain@v1
-        if: runner.os == 'macOS'
-        with:
-          rustflags: "-C link-arg=-undefined -C link-arg=dynamic_lookup"
-      - name: Install Rust Toolchain
-        uses: actions-rust-lang/setup-rust-toolchain@v1
       - name: Install Lua
         uses: leso-kn/gh-actions-lua@master
         with:
           luaVersion: "5.1"
       - name: Install Luarocks
         uses: hishamhm/gh-actions-luarocks@master
-      - name: Fix LUA_PATH and LUA_CPATH (Windows)
-        # TODO: Fix this upstream
-        run: |
-          echo "LUA_PATH=C:/Users/runneradmin/AppData/Roaming/luarocks/share/lua/5.1/?.lua:C:/Users/runneradmin/AppData/Roaming/luarocks/share/lua/5.1/?/init.lua" >> $env:GITHUB_ENV
-          echo "LUA_CPATH=C:/Users/runneradmin/AppData/Roaming/luarocks/lib/lua/5.1/?.dll" >> $env:GITHUB_ENV
-        if: runner.os == 'Windows'
       - name: Print environment
         run: |
           printenv
@@ -62,7 +41,8 @@ jobs:
           luarocks --verbose pack toml-edit
       - name: Regenerate Manifests and HTML
         run: luarocks-admin make-manifest --lua-version=5.1 .
-      - uses: stefanzweifel/git-auto-commit-action@v5
+      - name: commit-win32-x86_64
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: update build artifacts"
+          commit_message: "chore: update win32-x86_64 build artifacts"
           file_pattern: "*.rock manifest* index.html"

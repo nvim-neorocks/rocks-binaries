@@ -1,0 +1,50 @@
+name: Build Dependencies
+
+on: [push, workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: macos-14
+    needs: commit-linux-x86_64
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+      - name: Install C/C++ Compiler
+        uses: rlalik/setup-cpp-compiler@master
+        with:
+          compiler: clang-latest
+      - name: Install Rust Toolchain (macos)
+        uses: actions-rust-lang/setup-rust-toolchain@v1
+        with:
+          rustflags: "-C link-arg=-undefined -C link-arg=dynamic_lookup"
+      - name: Install Lua
+        uses: leso-kn/gh-actions-lua@master
+        with:
+          luaVersion: "5.1"
+      - name: Install Luarocks
+        uses: hishamhm/gh-actions-luarocks@master
+      - name: Print environment
+        run: |
+          printenv
+      - name: Install `luarocks-build-rust-mlua` Package
+        run: |
+          luarocks --verbose --local --lua-version=5.1 install luarocks-build-rust-mlua
+          luarocks --verbose pack luarocks-build-rust-mlua
+      - name: Install TOML Package
+        run: |
+          luarocks --verbose --local --lua-version=5.1 install toml
+          luarocks --verbose pack toml
+      - name: Install `toml-edit` Package
+        run: |
+          luarocks --verbose --local --lua-version=5.1 install toml-edit
+          luarocks --verbose pack toml-edit
+      - name: "[HACK] work around luarocks/#1630"
+        run: for f in *.macosx-x86_64.rock; do mv "$f" "$(echo "$f" | sed s/x86_64/aarch64/)"; done
+      - name: Regenerate Manifests and HTML
+        run: luarocks-admin make-manifest --lua-version=5.1 .
+      - name: commit-macosx-aarch64
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update macosx-aarch64 build artifacts"
+          file_pattern: "*.rock manifest* index.html"
