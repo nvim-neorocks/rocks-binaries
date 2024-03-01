@@ -8,6 +8,9 @@ on:
     types: 
       - completed
 
+# Prevent concurrent auto-commits
+concurrency:
+  group: auto-commit
 
 jobs:
   build:

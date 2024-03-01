@@ -2,6 +2,10 @@ name: Build linux-x86_64 dependencies
 
 on: [push, workflow_dispatch]
 
+# Prevent concurrent auto-commits
+concurrency:
+  group: auto-commit
+
 jobs:
   build:
     runs-on: ubuntu-20.04
