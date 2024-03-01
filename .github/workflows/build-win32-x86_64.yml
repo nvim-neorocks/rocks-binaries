@@ -1,11 +1,16 @@
 name: Build win32-x86_64 dependencies
 
-on: [push, workflow_dispatch]
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Build macosx-x86_64 dependencies"]
+    branches: [main]
+    types: 
+      - completed
 
 jobs:
   build:
     runs-on: windows-2019
-    needs: commit-macosx-x86_64
     steps:
       - uses: actions/checkout@v4
         with:
