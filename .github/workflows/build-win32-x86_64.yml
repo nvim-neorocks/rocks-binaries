@@ -34,6 +34,8 @@ jobs:
           luaVersion: "5.1"
       - name: Install Luarocks
         uses: hishamhm/gh-actions-luarocks@master
+        with:
+          luarocksVersion: "3.10.0"
       - name: Print environment
         run: |
           printenv
