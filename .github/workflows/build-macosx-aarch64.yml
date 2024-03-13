@@ -53,6 +53,27 @@ jobs:
         run: |
           luarocks --verbose --local --lua-version=5.1 install fzy
           luarocks --verbose pack fzy
+      - name: Install `luarocks-build-treesitter-parser` Package
+        run: |
+          luarocks --verbose --local --lua-version=5.1 install luarocks-build-treesitter-parser
+      - name: Get tree-sitter-parsers.json
+        uses: actions/checkout@v4
+        with: 
+          repository: nvim-neorocks/nurr
+          sparse-checkout: |
+            tree-sitter-parsers.json
+          path: nurr
+      - name: Install tree-sitter parsers
+        run: |
+          # Filter out parsers that need their sources generated
+          # We might want to consider adding those too
+          langs=$(jq -r '.parsers[] | select((.install_info.requires_generate_from_grammar // false) == false) | .lang' nurr/tree-sitter-parsers.json)
+          for lang in $langs; do
+            rm "tree-sitter-$lang-scm-1.macosx-aarch64.rock" || true
+            luarocks --local --lua-version=5.1 install "tree-sitter-$lang" \
+              || luarocks --local --dev --lua-version=5.1 install "tree-sitter-$lang" \
+              && luarocks pack "tree-sitter-$lang" || echo "Failed to pack tree-sitter-$lang"
+          done
       - name: "[HACK] work around luarocks/#1630"
         run: for f in *.macosx-x86_64.rock; do mv "$f" "$(echo "$f" | sed s/x86_64/aarch64/)"; done
       - name: Regenerate Manifests and HTML
