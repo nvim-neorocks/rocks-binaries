@@ -72,6 +72,7 @@ jobs:
           path: nurr
         if: always()
       - name: Install tree-sitter parsers
+        shell: bash
         run: |
           # Filter out parsers that need their sources generated
           # We might want to consider adding those too
