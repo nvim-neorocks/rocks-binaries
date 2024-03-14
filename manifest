@@ -1557,6 +1557,11 @@ repository = {
          {
             arch = "macosx-x86_64"
          }
+      },
+      ["0.2.1-1"] = {
+         {
+            arch = "linux-x86_64"
+         }
       }
    },
    ["tree-sitter-matlab"] = {
