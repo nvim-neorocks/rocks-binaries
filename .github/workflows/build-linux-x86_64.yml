@@ -1,7 +1,12 @@
 name: Build linux-x86_64 dependencies
 
-on: [push, workflow_dispatch]
-
+on:
+  push:
+  schedule:
+    # Runs every 24 hours
+    - cron: "0 */24 * * *"
+  workflow_dispatch:
+ 
 # Prevent concurrent auto-commits
 concurrency:
   group: auto-commit-linux-x86_64
