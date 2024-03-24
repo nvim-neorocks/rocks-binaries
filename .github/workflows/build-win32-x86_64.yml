@@ -64,30 +64,30 @@ jobs:
           luarocks --verbose --local --lua-version=5.1 install toml-edit
           luarocks --verbose pack toml-edit
         if: always()
-      - name: Install `luarocks-build-treesitter-parser` Package
-        run: |
-          luarocks --verbose --local --lua-version=5.1 install luarocks-build-treesitter-parser
-        if: always()
-      - name: Get tree-sitter-parsers.json
-        uses: actions/checkout@v4
-        with: 
-          repository: nvim-neorocks/nurr
-          sparse-checkout: |
-            tree-sitter-parsers.json
-          path: nurr
-        if: always()
-      - name: Install tree-sitter parsers
-        shell: bash
-        run: |
-          # Filter out parsers that need their sources generated
-          # We might want to consider adding those too
-          langs=$(jq -r '.parsers[] | select((.install_info.requires_generate_from_grammar // false) == false) | .lang' nurr/tree-sitter-parsers.json | tr -d '\r')
-          for lang in $langs; do
-            rm "tree-sitter-$lang-scm-1.win32-x86_64.rock" || true
-            luarocks --local --lua-version=5.1 install "tree-sitter-$lang" \
-              && luarocks pack "tree-sitter-$lang" || echo "Failed to pack tree-sitter-$lang"
-          done
-        if: always()
+      # - name: Install `luarocks-build-treesitter-parser` Package
+      #   run: |
+      #     luarocks --verbose --local --lua-version=5.1 install luarocks-build-treesitter-parser
+      #   if: always()
+      # - name: Get tree-sitter-parsers.json
+      #   uses: actions/checkout@v4
+      #   with: 
+      #     repository: nvim-neorocks/nurr
+      #     sparse-checkout: |
+      #       tree-sitter-parsers.json
+      #     path: nurr
+      #   if: always()
+      # - name: Install tree-sitter parsers
+      #   shell: bash
+      #   run: |
+      #     # Filter out parsers that need their sources generated
+      #     # We might want to consider adding those too
+      #     langs=$(jq -r '.parsers[] | select((.install_info.requires_generate_from_grammar // false) == false) | .lang' nurr/tree-sitter-parsers.json | tr -d '\r')
+      #     for lang in $langs; do
+      #       rm "tree-sitter-$lang-scm-1.win32-x86_64.rock" || true
+      #       luarocks --local --lua-version=5.1 install "tree-sitter-$lang" \
+      #         && luarocks pack "tree-sitter-$lang" || echo "Failed to pack tree-sitter-$lang"
+      #     done
+      #   if: always()
       - name: Regenerate Manifests and HTML
         run: luarocks-admin make-manifest --lua-version=5.1 .
         if: always()
