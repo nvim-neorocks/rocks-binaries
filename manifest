@@ -27,11 +27,17 @@ repository = {
          },
          {
             arch = "win32-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
    luafilesystem = {
       ["1.8.0-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "win32-x86_64"
          },
@@ -72,6 +78,9 @@ repository = {
             arch = "macosx-aarch64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "win32-x86_64"
          },
          {
@@ -89,6 +98,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    }
