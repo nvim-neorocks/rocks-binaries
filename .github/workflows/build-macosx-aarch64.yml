@@ -61,6 +61,14 @@ jobs:
         run: |
           luarocks --verbose --local --lua-version=5.1 install tree-sitter-orgmode
           luarocks --verbose pack tree-sitter-orgmode
+      - name: Install `tree-sitter-norg` Package
+        run: |
+          luarocks --verbose --local --lua-version=5.1 install tree-sitter-norg
+          luarocks --verbose pack tree-sitter-norg
+      - name: Install `tree-sitter-norg-meta` Package
+        run: |
+          luarocks --verbose --local --lua-version=5.1 install tree-sitter-norg-meta
+          luarocks --verbose pack tree-sitter-norg-meta
       # - name: Install `luarocks-build-treesitter-parser` Package
       #   run: |
       #     luarocks --verbose --local --lua-version=5.1 install luarocks-build-treesitter-parser
