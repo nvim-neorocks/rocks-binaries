@@ -37,7 +37,7 @@ jobs:
       - name: Print environment
         run: |
           printenv
-      - name: [HACK]: Set default compiler flags for MacOS systems
+      - name: "[HACK]: Set default compiler flags for MacOS systems"
         run: |
           luarocks config --scope=system -- LIBFLAG "-std=c++11 -shared"
       - name: Install `LuaFileSystem` Package
