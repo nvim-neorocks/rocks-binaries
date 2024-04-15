@@ -24,6 +24,10 @@ jobs:
         uses: Homebrew/actions/setup-homebrew@master
       - name: Install Clang 16
         run: brew install llvm@16
+      - name: Export path
+        run: |
+          export PATH="/opt/homebrew/opt/llvm@16/bin:$PATH"
+
       - name: Install Rust Toolchain (macos)
         uses: actions-rust-lang/setup-rust-toolchain@v1
         with:
