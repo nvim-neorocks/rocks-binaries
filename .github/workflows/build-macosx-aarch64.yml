@@ -16,9 +16,6 @@ concurrency:
 jobs:
   build:
     runs-on: macos-14
-    include:
-      - compiler: gcc
-        gcc: 11
     steps:
       - uses: actions/checkout@v4
         with:
@@ -69,8 +66,8 @@ jobs:
           luarocks config --scope=system -- variables.LIBFLAG "-bundle -undefined dynamic_lookup -all_load -std=c++11"
       - name: Install `tree-sitter-norg` Package
         env:
-          CC: gcc-${{ matrix.gcc }}
-          CXX: g++-${{ matrix.gcc }}
+          CC: clang
+          CXX: clang++
         run: |
           luarocks --verbose --local --lua-version=5.1 install tree-sitter-norg
           luarocks --verbose pack tree-sitter-norg
