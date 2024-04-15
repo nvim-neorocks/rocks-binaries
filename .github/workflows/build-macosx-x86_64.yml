@@ -20,11 +20,10 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.ref }}
-      - name: Install C/C++ Compiler
-        id: install_cc
-        uses: rlalik/setup-cpp-compiler@master
-        with:
-          compiler: clang-latest
+      - name: Set up Homebrew
+        uses: Homebrew/actions/setup-homebrew@v2
+      - name: Install Clang 16
+        run: brew install llvm@16
       - name: Install Rust Toolchain (macos)
         uses: actions-rust-lang/setup-rust-toolchain@v1
         with:
@@ -66,9 +65,6 @@ jobs:
         run: |
           luarocks config --lua-version=5.1 --scope=system -- variables.LIBFLAG "-bundle -undefined dynamic_lookup -all_load -std=c++11"
       - name: Install `tree-sitter-norg` Package
-        env:
-          CC: ${{ steps.install_cc.outputs.cc }}
-          CXX: ${{ steps.install_cc.outputs.cxx }}
         run: |
           luarocks --verbose --local --lua-version=5.1 install tree-sitter-norg
           luarocks --verbose pack tree-sitter-norg
