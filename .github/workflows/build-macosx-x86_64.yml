@@ -16,6 +16,9 @@ concurrency:
 jobs:
   build:
     runs-on: macos-11
+    include:
+      - compiler: gcc
+        gcc: 11
     steps:
       - uses: actions/checkout@v4
         with:
