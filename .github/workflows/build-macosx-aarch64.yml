@@ -23,14 +23,11 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.ref }}
-      - name: Set up Homebrew
-        uses: Homebrew/actions/setup-homebrew@master
-      - name: Install Clang 16
-        run: brew install llvm@16
-      - name: Export path
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@main
+      - name: Install gcc
         run: |
-          export PATH="/opt/homebrew/opt/llvm@16/bin:$PATH"
-
+          nix profile install nixpkgs#gcc
       - name: Install Rust Toolchain (macos)
         uses: actions-rust-lang/setup-rust-toolchain@v1
         with:
@@ -70,7 +67,7 @@ jobs:
           luarocks --verbose pack tree-sitter-orgmode
       - name: Install `tree-sitter-norg` Package
         run: |
-          luarocks --verbose --local --lua-version=5.1 install tree-sitter-norg
+          luarocks --verbose --local --lua-version=5.1 install tree-sitter-norg 0.2.1
           luarocks --verbose pack tree-sitter-norg
       - name: Install `tree-sitter-norg-meta` Package
         run: |
