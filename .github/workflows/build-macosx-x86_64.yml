@@ -25,9 +25,9 @@ jobs:
           ref: ${{ github.ref }}
       - name: Install Nix
         uses: DeterminateSystems/nix-installer-action@main
-      - name: Install gcc
+      - name: Install clang
         run: |
-          nix profile install nixpkgs#gcc
+          nix profile install nixpkgs#clang
       - name: Install Rust Toolchain (macos)
         uses: actions-rust-lang/setup-rust-toolchain@v1
         with:
@@ -67,7 +67,7 @@ jobs:
           luarocks --verbose pack tree-sitter-orgmode
       - name: Install `tree-sitter-norg` Package
         run: |
-          luarocks --verbose --local --lua-version=5.1 install tree-sitter-norg 0.2.1
+          luarocks --verbose --local --lua-version=5.1 install tree-sitter-norg
           luarocks --verbose pack tree-sitter-norg
       - name: Install `tree-sitter-norg-meta` Package
         run: |
