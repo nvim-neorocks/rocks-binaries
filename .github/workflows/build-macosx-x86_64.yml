@@ -1,6 +1,9 @@
 name: Build macosx-x86_64 dependencies
 
 on:
+  push:
+    paths:
+      - .github/workflows/build-macosx-x86_64.yml
   workflow_dispatch:
   workflow_run:
     workflows: ["Build macosx-aarch64 dependencies"]
