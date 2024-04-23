@@ -61,6 +61,10 @@ jobs:
         run: |
           luarocks --verbose --local --lua-version=5.1 install fzy
           luarocks --verbose pack fzy
+      - name: Install `jsregexp` Package
+        run: |
+          luarocks --verbose --local --lua-version=5.1 install jsrexexp
+          luarocks --verbose pack fzy
       - name: Install `tree-sitter-orgmode` Package
         run: |
           luarocks --verbose --local --lua-version=5.1 install tree-sitter-orgmode
