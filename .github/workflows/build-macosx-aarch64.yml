@@ -1,9 +1,6 @@
 name: Build macosx-aarch64 dependencies
 
 on:
-  push:
-    paths:
-      - .github/workflows/build-macosx-aarch64.yml
   workflow_dispatch:
   workflow_run:
     workflows: ["Build linux-x86_64 dependencies"]
@@ -63,8 +60,8 @@ jobs:
           luarocks --verbose pack fzy
       - name: Install `jsregexp` Package
         run: |
-          luarocks --verbose --local --lua-version=5.1 install jsrexexp
-          luarocks --verbose pack fzy
+          luarocks --verbose --local --lua-version=5.1 install jsregexp
+          luarocks --verbose pack jsregexp
       - name: Install `tree-sitter-orgmode` Package
         run: |
           luarocks --verbose --local --lua-version=5.1 install tree-sitter-orgmode

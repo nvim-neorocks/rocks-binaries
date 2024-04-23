@@ -1,9 +1,6 @@
 name: Build linux-x86_64 dependencies
 
 on:
-  push:
-    paths:
-      - .github/workflows/build-linux-x86_64.yml
   schedule:
     # Runs every 24 hours
     - cron: "0 */24 * * *"
