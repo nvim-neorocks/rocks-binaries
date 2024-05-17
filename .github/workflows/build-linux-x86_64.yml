@@ -18,10 +18,11 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.ref }}
-      - name: Install C/C++ Compiler
-        uses: rlalik/setup-cpp-compiler@master
-        with:
-          compiler: clang-3.3.0
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@main
+      - name: Install gcc
+        run: |
+          nix profile install nixpkgs#gcc
       - uses: tree-sitter/setup-action@v1
         with:
           tree-sitter-ref: v0.22.6
