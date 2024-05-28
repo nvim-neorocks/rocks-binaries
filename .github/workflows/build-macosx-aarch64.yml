@@ -38,6 +38,15 @@ jobs:
           luaVersion: "5.1"
       - name: Install Luarocks
         uses: hishamhm/gh-actions-luarocks@master
+      - uses: rhysd/action-setup-vim@v1
+        with:
+          neovim: true
+          version: stable
+      - name: Get tree-sitter ABI version
+        run: |
+          # NOTE: Neovim prints output to stderr
+          ABI_VERSION="$(nvim -u NORC -c 'lua print(vim.treesitter.language_version)' --headless +q 2>&1)"
+          echo "TREE_SITTER_LANGUAGE_VERSION=$ABI_VERSION" >> $GITHUB_ENV
       - name: Print environment
         run: |
           printenv
