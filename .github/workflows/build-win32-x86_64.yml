@@ -32,6 +32,18 @@ jobs:
         uses: baptiste0928/cargo-install@v3
         with:
           crate: tree-sitter-cli
+
+      - name: Install Scoop
+        uses: MinoruSekine/setup-scoop@v4
+
+      - name: Add rocks-scoop bucket
+        run: |
+          scoop bucket add neorocks-scoop https://github.com/nvim-neorocks/rocks-scoop.git
+
+      - name: Install luarocks
+        run: |
+          scoop install neorocks-scoop/luarocks
+
       - name: Install Lua
         uses: leso-kn/gh-actions-lua@master
         with:
@@ -40,6 +52,7 @@ jobs:
         uses: hishamhm/gh-actions-luarocks@master
         with:
           luarocksVersion: "3.11.0"
+
       - name: Print environment
         run: |
           printenv
