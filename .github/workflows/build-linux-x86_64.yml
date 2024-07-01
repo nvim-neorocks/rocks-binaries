@@ -20,14 +20,12 @@ jobs:
           ref: ${{ github.ref }}
       - name: Install Nix
         uses: DeterminateSystems/nix-installer-action@main
-      - name: Install gcc
+      - name: Install gcc and cargo
         run: |
-          nix profile install nixpkgs#gcc
+          nix profile install nixpkgs#gcc nixpkgs#cargo
       - uses: tree-sitter/setup-action@v1
         with:
           tree-sitter-ref: v0.22.6
-      - name: Install Rust Toolchain
-        uses: actions-rust-lang/setup-rust-toolchain@v1
       - name: Install Lua
         uses: leso-kn/gh-actions-lua@master
         with:
