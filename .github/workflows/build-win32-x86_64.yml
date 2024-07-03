@@ -85,6 +85,10 @@ jobs:
         run: |
           luarocks --verbose --local --lua-version=5.1 install jsregexp
           luarocks --verbose pack jsregexp
+      - name: Install `lua-curl` Package
+        run: |
+          luarocks --verbose --local --lua-version=5.1 install lua-curl
+          luarocks --verbose pack lua-curl
         if: always()
 
       - name: Install `tree-sitter-orgmode` Package
