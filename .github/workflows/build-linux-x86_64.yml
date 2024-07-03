@@ -69,9 +69,11 @@ jobs:
         run: |
           luarocks --verbose --local --lua-version=5.1 install jsregexp
           luarocks --verbose pack jsregexp
+      - name: Install `curl` headers
+        run: sudo apt-get install -y libcurl4-gnutls-dev
       - name: Install `lua-curl` Package
         run: |
-          luarocks --verbose --local --lua-version=5.1 install lua-curl
+          luarocks --verbose --local --lua-version=5.1 install lua-curl CURL_INCDIR=/usr/include/x86_64-linux-gnu
           luarocks --verbose pack lua-curl
       - name: Install `tree-sitter-orgmode` Package
         run: |
