@@ -118,4 +118,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: update macosx-x86_64 build artifacts"
-          file_pattern: "*.macosx-x86_64.rock manifest* index.html"
+          file_pattern: "*.macosx-x86_64.rock *.all.rock manifest* index.html"

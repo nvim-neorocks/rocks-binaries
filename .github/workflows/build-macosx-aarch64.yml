@@ -121,4 +121,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: update macosx-aarch64 build artifacts"
-          file_pattern: "*.macosx-aarch64.rock manifest* index.html"
+          file_pattern: "*.macosx-aarch64.rock *.all.rock manifest* index.html"
