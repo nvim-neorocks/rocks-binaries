@@ -57,29 +57,35 @@ jobs:
         run: |
           printenv
       - name: Install `LuaFileSystem` Package
+        if: always()
         run: |
-          luarocks --verbose --local --lua-version=5.1 install luafilesystem
-          luarocks --verbose pack luafilesystem
+          luarocks --local --lua-version=5.1 install luafilesystem
+          luarocks pack luafilesystem
       - name: Install `luarocks-build-rust-mlua` Package
+        if: always()
         run: |
-          luarocks --verbose --local --lua-version=5.1 install luarocks-build-rust-mlua
-          luarocks --verbose pack luarocks-build-rust-mlua
+          luarocks --local --lua-version=5.1 install luarocks-build-rust-mlua
+          luarocks pack luarocks-build-rust-mlua
       - name: Install TOML Package
+        if: always()
         run: |
-          luarocks --verbose --local --lua-version=5.1 install toml
-          luarocks --verbose pack toml
+          luarocks --local --lua-version=5.1 install toml
+          luarocks pack toml
       - name: Install `toml-edit` Package
+        if: always()
         run: |
-          luarocks --verbose --local --lua-version=5.1 install toml-edit
-          luarocks --verbose pack toml-edit
+          luarocks --local --lua-version=5.1 install toml-edit
+          luarocks pack toml-edit
       - name: Install `fzy` Package
+        if: always()
         run: |
-          luarocks --verbose --local --lua-version=5.1 install fzy
-          luarocks --verbose pack fzy
+          luarocks --local --lua-version=5.1 install fzy
+          luarocks pack fzy
       - name: Install `jsregexp` Package
+        if: always()
         run: |
-          luarocks --verbose --local --lua-version=5.1 install jsregexp
-          luarocks --verbose pack jsregexp
+          luarocks --local --lua-version=5.1 install jsregexp
+          luarocks pack jsregexp
       # FIXME
       # - name: Install `lua-curl` Package
       #   run: |
@@ -87,18 +93,22 @@ jobs:
       #     luarocks --verbose --local --lua-version=5.1 install lua-curl
       #     luarocks --verbose pack lua-curl
       - name: Install `tree-sitter-orgmode` Package
+        if: always()
         run: |
-          luarocks --verbose --local --lua-version=5.1 install tree-sitter-orgmode
-          luarocks --verbose pack tree-sitter-orgmode
+          luarocks --local --lua-version=5.1 install tree-sitter-orgmode
+          luarocks pack tree-sitter-orgmode
       - name: Install `tree-sitter-norg` Package
+        if: always()
         run: |
-          luarocks --verbose --local --lua-version=5.1 install tree-sitter-norg
-          luarocks --verbose pack tree-sitter-norg
+          luarocks --local --lua-version=5.1 install tree-sitter-norg
+          luarocks pack tree-sitter-norg
       - name: Install `tree-sitter-norg-meta` Package
+        if: always()
         run: |
-          luarocks --verbose --local --lua-version=5.1 install tree-sitter-norg-meta
-          luarocks --verbose pack tree-sitter-norg-meta
+          luarocks --local --lua-version=5.1 install tree-sitter-norg-meta
+          luarocks pack tree-sitter-norg-meta
       - name: Get tree-sitter-parsers.json
+        if: always()
         uses: actions/checkout@v4
         with: 
           repository: nvim-neorocks/nurr
@@ -106,6 +116,7 @@ jobs:
             tree-sitter-parsers.json
           path: nurr
       - name: Install tree-sitter parsers
+        if: always()
         run: |
           # Filter out parsers that need their sources generated
           # We might want to consider adding those too
@@ -116,8 +127,10 @@ jobs:
               && luarocks pack "tree-sitter-$lang" || echo "Failed to pack tree-sitter-$lang"
           done
       - name: Regenerate Manifests and HTML
+        if: always()
         run: luarocks-admin make-manifest --lua-version=5.1 .
       - name: commit-macosx-aarch64
+        if: always()
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: update macosx-aarch64 build artifacts"
