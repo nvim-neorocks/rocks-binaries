@@ -2,8 +2,8 @@ name: Build linux-x86_64 dependencies
 
 on:
   schedule:
-    # Runs every 24 hours
-    - cron: "0 */24 * * *"
+    # Runs 30 min past every 12 h
+    - cron: "30 */12 * * *"
   workflow_dispatch:
  
 # Prevent concurrent auto-commits
