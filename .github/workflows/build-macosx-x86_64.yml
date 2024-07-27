@@ -56,9 +56,7 @@ jobs:
           printenv
       - name: Install `LuaFileSystem` Package
         if: always()
-        run: |
-          luarocks --local --lua-version=5.1 install luafilesystem
-          luarocks pack luafilesystem
+        run: ./scripts/pack_binary_rock.lua luafilesystem macosx-x86_64
       - name: Install `luarocks-build-rust-mlua` Package
         if: always()
         run: |
@@ -66,24 +64,16 @@ jobs:
           luarocks pack luarocks-build-rust-mlua
       - name: Install TOML Package
         if: always()
-        run: |
-          luarocks --local --lua-version=5.1 install toml
-          luarocks pack toml
+        run: ./scripts/pack_binary_rock.lua toml macosx-x86_64
       - name: Install `toml-edit` Package
         if: always()
-        run: |
-          luarocks --local --lua-version=5.1 install toml-edit
-          luarocks pack toml-edit
+        run: ./scripts/pack_binary_rock.lua toml-edit macosx-x86_64
       - name: Install `fzy` Package
         if: always()
-        run: |
-          luarocks --local --lua-version=5.1 install fzy
-          luarocks pack fzy
+        run: ./scripts/pack_binary_rock.lua fzy macosx-x86_64
       - name: Install `jsregexp` Package
         if: always()
-        run: |
-          luarocks --local --lua-version=5.1 install jsregexp
-          luarocks pack jsregexp
+        run: ./scripts/pack_binary_rock.lua jsregexp macosx-x86_64
       # FIXME:
       # - name: Install `lua-curl` Package
       #   run: |
@@ -91,19 +81,13 @@ jobs:
       #     luarocks --verbose pack lua-curl
       - name: Install `tree-sitter-orgmode` Package
         if: always()
-        run: |
-          luarocks --local --lua-version=5.1 install tree-sitter-orgmode
-          luarocks pack tree-sitter-orgmode
+        run: ./scripts/pack_binary_rock.lua tree-sitter-orgmode macosx-x86_64
       - name: Install `tree-sitter-norg` Package
         if: always()
-        run: |
-          luarocks --local --lua-version=5.1 install tree-sitter-norg
-          luarocks pack tree-sitter-norg
+        run: ./scripts/pack_binary_rock.lua tree-sitter-norg macosx-x86_64
       - name: Install `tree-sitter-norg-meta` Package
         if: always()
-        run: |
-          luarocks --local --lua-version=5.1 install tree-sitter-norg-meta
-          luarocks pack tree-sitter-norg-meta
+        run: ./scripts/pack_binary_rock.lua tree-sitter-norg-meta macosx-x86_64
       - name: Get tree-sitter-parsers.json
         uses: actions/checkout@v4
         with: 
@@ -118,9 +102,8 @@ jobs:
           # We might want to consider adding those too
           langs=$(jq -r '.parsers[] | select((.install_info.requires_generate_from_grammar // false) == false) | .lang' nurr/tree-sitter-parsers.json)
           for lang in $langs; do
-            rm "tree-sitter-$lang-scm-1.macosx-aarch64.rock" || true
-            luarocks --local --lua-version=5.1 install "tree-sitter-$lang" \
-              && luarocks pack "tree-sitter-$lang" || echo "Failed to pack tree-sitter-$lang"
+            ./scripts/pack_binary_rock.lua "tree-sitter-$lang" "macosx-x86_64" \
+              || echo "Skipping tree-sitter-$lang"
           done
       - name: Regenerate Manifests and HTML
         if: always()
