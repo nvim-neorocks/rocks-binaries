@@ -31,7 +31,14 @@ local function get_latest_version(version_str_iterator)
       return latest_sofar and latest_sofar > version and latest_sofar or version
     end)
 end
-local latest_version = get_latest_version(output:gmatch("[%S+]%s+(%S+)%s+[^\n]+"))
+
+local version_iter = vim.iter(output:gmatch("(%S+)%s+(%S+)%s+[^\n]+"))
+  :map(function(name, version)
+    if name == rock_name then
+      return version
+    end
+  end)
+local latest_version = get_latest_version(version_iter)
 if not latest_version then
   error("Could not determine latest version of " .. rock_name)
 end
@@ -59,6 +66,7 @@ Latest packed version: %s
 
 if latest_packed_version and latest_packed_version >= latest_version then
   print("Nothing to do.")
+  return
 end
 
 sc = vim.system({ "luarocks", "--local", "--lua-version=5.1", "install", rock_name, latest_version}):wait()
