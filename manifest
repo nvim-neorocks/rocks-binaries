@@ -4099,6 +4099,11 @@ repository = {
          {
             arch = "macosx-x86_64"
          }
+      },
+      ["0.0.3-1"] = {
+         {
+            arch = "linux-x86_64"
+         }
       }
    },
    ["tree-sitter-koto"] = {
@@ -5804,6 +5809,11 @@ repository = {
          {
             arch = "linux-x86_64"
          }
+      },
+      ["0.0.3-1"] = {
+         {
+            arch = "linux-x86_64"
+         }
       }
    },
    ["tree-sitter-prolog"] = {
@@ -5833,6 +5843,11 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         }
+      },
+      ["0.0.3-1"] = {
+         {
+            arch = "linux-x86_64"
          }
       }
    },
