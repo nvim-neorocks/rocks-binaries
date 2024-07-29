@@ -6556,6 +6556,13 @@ repository = {
          }
       }
    },
+   ["tree-sitter-rescript"] = {
+      ["0.0.2-1"] = {
+         {
+            arch = "linux-x86_64"
+         }
+      }
+   },
    ["tree-sitter-rnoweb"] = {
       ["0.0.1-1"] = {
          {
