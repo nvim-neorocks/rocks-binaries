@@ -4009,6 +4009,11 @@ repository = {
          {
             arch = "win32-x86_64"
          }
+      },
+      ["0.0.3-1"] = {
+         {
+            arch = "linux-x86_64"
+         }
       }
    },
    ["tree-sitter-kconfig"] = {
@@ -8901,6 +8906,11 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         }
+      },
+      ["0.0.3-1"] = {
+         {
+            arch = "linux-x86_64"
          }
       }
    },
