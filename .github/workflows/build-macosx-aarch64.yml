@@ -3,7 +3,7 @@ name: Build macosx-aarch64 dependencies
 on:
   workflow_dispatch:
   workflow_run:
-    workflows: ["Build macosx-aarch64 dependencies"]
+    workflows: ["Build linux-x86_64 dependencies"]
     branches: [main]
     types: 
       - completed
