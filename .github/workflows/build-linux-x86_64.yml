@@ -26,7 +26,7 @@ jobs:
         uses: actions-rust-lang/setup-rust-toolchain@v1
       - uses: tree-sitter/setup-action@v1
         with:
-          tree-sitter-ref: v0.22.6
+          tree-sitter-ref: v0.22.5
       - name: Install Lua
         uses: leso-kn/gh-actions-lua@master
         with:

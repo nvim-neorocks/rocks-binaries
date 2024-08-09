@@ -25,9 +25,9 @@ jobs:
       - name: Install gcc
         run: |
           nix profile install nixpkgs#gcc
-      - name: Install tree-sitter CLI
-        run: |
-          nix profile install nixpkgs#tree-sitter
+      - uses: tree-sitter/setup-action@v1
+        with:
+          tree-sitter-ref: v0.22.5
       - name: Install Rust Toolchain (macos)
         uses: actions-rust-lang/setup-rust-toolchain@v1
         with:

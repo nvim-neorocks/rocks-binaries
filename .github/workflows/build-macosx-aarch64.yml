@@ -31,7 +31,7 @@ jobs:
           rustflags: "-C link-arg=-undefined -C link-arg=dynamic_lookup"
       - uses: tree-sitter/setup-action@v1
         with:
-          tree-sitter-ref: v0.22.6
+          tree-sitter-ref: v0.22.5
       - name: Install Lua
         uses: leso-kn/gh-actions-lua@master
         with:
