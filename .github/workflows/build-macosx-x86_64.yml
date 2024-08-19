@@ -90,6 +90,7 @@ jobs:
         run: ./scripts/pack_binary_rock.lua tree-sitter-norg-meta macosx-x86_64
       - name: Get tree-sitter-parsers.json
         uses: actions/checkout@v4
+        if: always()
         with: 
           repository: nvim-neorocks/nurr
           sparse-checkout: |
