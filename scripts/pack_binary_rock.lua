@@ -66,7 +66,7 @@ Latest packed version: %s
 
 if latest_packed_version and latest_packed_version >= latest_version then
   print("Nothing to do.")
-  -- return
+  return
 end
 
 sc = vim.system({ "luarocks", "--local", "--lua-version=5.1", "install", rock_name, latest_version}):wait()
