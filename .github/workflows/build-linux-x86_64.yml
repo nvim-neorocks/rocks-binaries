@@ -13,12 +13,12 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.ref }}
-      - name: Install C/C++ Compiler
+      - name: Install clang
         uses: rlalik/setup-cpp-compiler@master
         with:
           compiler: clang-latest
