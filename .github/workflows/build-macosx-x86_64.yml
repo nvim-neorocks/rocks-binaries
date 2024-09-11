@@ -23,7 +23,7 @@ jobs:
       - name: Install Nix
         uses: DeterminateSystems/nix-installer-action@main
       - name: Install C/C++ Compiler
-        run: nix profile install clang
+        run: nix profile install nixpkgs#clang
       - uses: tree-sitter/setup-action@v1
       - name: Install Rust Toolchain (macos)
         uses: actions-rust-lang/setup-rust-toolchain@v1
