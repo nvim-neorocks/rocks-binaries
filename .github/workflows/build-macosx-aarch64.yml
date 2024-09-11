@@ -22,9 +22,10 @@ jobs:
           ref: ${{ github.ref }}
       - name: Install Nix
         uses: DeterminateSystems/nix-installer-action@main
-      - name: Install gcc
-        run: |
-          nix profile install nixpkgs#gcc
+      - name: Install C/C++ Compiler
+        uses: rlalik/setup-cpp-compiler@master
+        with:
+          compiler: clang-latest
       - name: Install Rust Toolchain (macos)
         uses: actions-rust-lang/setup-rust-toolchain@v1
         with:
@@ -86,6 +87,8 @@ jobs:
       - name: Install `tree-sitter-norg` Package
         if: always()
         run: ./scripts/pack_binary_rock.lua tree-sitter-norg macosx-aarch64
+        env:
+          CXX: "clang++"
       - name: Install `tree-sitter-norg-meta` Package
         if: always()
         run: ./scripts/pack_binary_rock.lua tree-sitter-norg-meta macosx-aarch64

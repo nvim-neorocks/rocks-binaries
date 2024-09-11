@@ -21,7 +21,7 @@ jobs:
       - name: Install C/C++ Compiler
         uses: rlalik/setup-cpp-compiler@master
         with:
-          compiler: gcc
+          compiler: clang-latest
       - name: Install Rust Toolchain
         uses: actions-rust-lang/setup-rust-toolchain@v1
       - uses: tree-sitter/setup-action@v1
@@ -75,6 +75,8 @@ jobs:
       - name: Install `tree-sitter-norg` Package
         if: always()
         run: ./scripts/pack_binary_rock.lua tree-sitter-norg linux-x86_64
+        env:
+          CXX: "clang++"
       - name: Install `tree-sitter-norg-meta` Package
         if: always()
         run: ./scripts/pack_binary_rock.lua tree-sitter-norg-meta linux-x86_64
