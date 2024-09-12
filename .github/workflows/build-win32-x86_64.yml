@@ -117,7 +117,7 @@ jobs:
         run: |
           $langs = (jq -r '.parsers[] | .lang' nurr/tree-sitter-parsers.json).Replace("`r","")
           foreach ($lang in $langs) {
-            nvim -u NONE -U NONE -N -i NONE -l ./scripts/pack_binary_rock.lua -- "tree-sitter-$lang" "win32-x86_64"
+            nvim -u NONE -U NONE -N -i NONE -l ./scripts/pack_binary_rock.lua "tree-sitter-$lang" "win32-x86_64"
             if ($LASTEXITCODE -ne 0) {
               Write-Host "Failed to install/pack tree-sitter-$lang"
             }
