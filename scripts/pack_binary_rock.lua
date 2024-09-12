@@ -15,7 +15,6 @@ else
   luarocks_cmd = "luarocks"
 end
 
-local sc = vim.system({ luarocks_cmd, "search", "--porcelain", rock_name}):wait()
 local ok, err = pcall(vim.system, { luarocks_cmd, "search", "--porcelain", rock_name}, nil)
 local sc
 if ok then
