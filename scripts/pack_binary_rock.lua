@@ -69,7 +69,11 @@ if latest_packed_version and latest_packed_version >= latest_version then
   return
 end
 
-sc = vim.system({ "luarocks", "--local", "--lua-version=5.1", "install", rock_name, latest_version}):wait()
+local luarocks_cmd = vim.fn.executable("luarocks") == 1 and "luarocks"
+  or vim.fn.executable("luarocks.bat") == 1 and "luarocks.bat"
+  or error("luarocks executable not found")
+
+sc = vim.system({ luarocks_cmd, "--local", "--lua-version=5.1", "install", rock_name, latest_version}):wait()
 
 if sc.code ~= 0 then
   print(sc.stdout and "STDOUT:\n" .. sc.stdout)
@@ -77,7 +81,7 @@ if sc.code ~= 0 then
   error("luarocks install failed!")
 end
 
-sc = vim.system({ "luarocks", "pack", rock_name}):wait()
+sc = vim.system({ luarocks_cmd, "pack", rock_name}):wait()
 
 if sc.code ~= 0 then
   print(sc.stdout and "STDOUT:\n" .. sc.stdout)
