@@ -7,9 +7,13 @@ end
 local rock_name = arg[1]
 local arch = arg[2]
 
-local luarocks_cmd = vim.fn.executable("luarocks") == 1 and "luarocks"
-  or vim.fn.executable("luarocks.bat") == 1 and "luarocks.bat"
-  or error("luarocks executable not found")
+local luarocks_cmd
+if vim.uv.os_uname().sysname:lower():find("windows") then
+  -- HACK: Hardcode luarocks path, as it can't seem to be found by vim.system.
+  luarocks_cmd = assert(vim.fn.glob("C:/Users/runneradmin/scoop/apps/luarocks/*/luarocks"), "luarocks executable not found")
+else
+  luarocks_cmd = "luarocks"
+end
 
 local sc = vim.system({ luarocks_cmd, "search", "--porcelain", rock_name}):wait()
 if sc.code ~= 0 then
