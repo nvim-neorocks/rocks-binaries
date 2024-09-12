@@ -16,6 +16,17 @@ else
 end
 
 local sc = vim.system({ luarocks_cmd, "search", "--porcelain", rock_name}):wait()
+local ok, err = pcall(vim.system, { luarocks_cmd, "search", "--porcelain", rock_name}, nil)
+local sc
+if ok then
+  sc = err:wait()
+else
+  sc = {
+      code = 1,
+      signal = 0,
+      stderr = ("Failed to invoke luarocks at %s: %s"):format(config.luarocks_binary, err),
+  }
+end
 if sc.code ~= 0 then
   error("Error searching for " .. rock_name .. ":\n" .. vim.inspect(sc))
 end
