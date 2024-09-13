@@ -23,7 +23,7 @@ else
   sc = {
       code = 1,
       signal = 0,
-      stderr = ("Failed to invoke luarocks at %s: %s"):format(config.luarocks_binary, err),
+      stderr = ("Failed to invoke luarocks at %s: %s"):format(luarocks_cmd, err),
   }
 end
 if sc.code ~= 0 then
