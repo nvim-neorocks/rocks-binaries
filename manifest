@@ -238,6 +238,9 @@ repository = {
       },
       ["0.0.7-1"] = {
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          },
          {
@@ -312,6 +315,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -383,6 +389,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          }
@@ -460,6 +469,9 @@ repository = {
             arch = "macosx-aarch64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "linux-x86_64"
          }
       }
@@ -529,6 +541,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          }
@@ -607,6 +622,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -672,6 +690,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          }
@@ -739,6 +760,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "linux-x86_64"
          },
@@ -817,6 +841,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -887,6 +914,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          },
          {
             arch = "linux-x86_64"
@@ -960,6 +990,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -1035,6 +1068,9 @@ repository = {
             arch = "linux-x86_64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          }
       }
@@ -1101,6 +1137,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          },
@@ -1176,6 +1215,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -1245,6 +1287,9 @@ repository = {
             arch = "linux-x86_64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          }
       }
@@ -1311,6 +1356,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          },
@@ -1386,6 +1434,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -1445,6 +1496,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -1518,6 +1572,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -1583,6 +1640,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          },
@@ -1658,6 +1718,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -1725,6 +1788,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          },
          {
             arch = "linux-x86_64"
@@ -1795,6 +1861,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          },
          {
             arch = "macosx-aarch64"
@@ -1868,6 +1937,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -1944,6 +2016,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -2009,6 +2084,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "linux-x86_64"
          },
@@ -2083,6 +2161,9 @@ repository = {
             arch = "linux-x86_64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          }
       }
@@ -2154,6 +2235,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -2224,6 +2308,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -2294,6 +2381,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          },
          {
             arch = "macosx-aarch64"
@@ -2373,6 +2463,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -2440,6 +2533,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          },
          {
             arch = "linux-x86_64"
@@ -2515,6 +2611,9 @@ repository = {
       },
       ["0.0.7-1"] = {
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          }
       }
@@ -2585,6 +2684,9 @@ repository = {
             arch = "macosx-aarch64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "linux-x86_64"
          }
       }
@@ -2645,6 +2747,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          },
          {
             arch = "linux-x86_64"
@@ -2723,6 +2828,9 @@ repository = {
             arch = "linux-x86_64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          }
       }
@@ -2796,6 +2904,9 @@ repository = {
       },
       ["0.0.7-1"] = {
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "linux-x86_64"
          },
          {
@@ -2865,6 +2976,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          },
@@ -2940,6 +3054,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -3010,6 +3127,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -3077,6 +3197,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          },
          {
             arch = "macosx-aarch64"
@@ -3149,6 +3272,9 @@ repository = {
             arch = "macosx-aarch64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "linux-x86_64"
          }
       }
@@ -3219,6 +3345,9 @@ repository = {
             arch = "linux-x86_64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          }
       }
@@ -3282,6 +3411,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          },
          {
             arch = "linux-x86_64"
@@ -3350,6 +3482,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          },
@@ -3432,6 +3567,9 @@ repository = {
       },
       ["0.0.9-1"] = {
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "linux-x86_64"
          },
          {
@@ -3501,6 +3639,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "linux-x86_64"
          },
@@ -3618,6 +3759,9 @@ repository = {
             arch = "macosx-aarch64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "linux-x86_64"
          }
       }
@@ -3689,6 +3833,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -3759,6 +3906,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -3840,6 +3990,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -3910,6 +4063,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -3975,6 +4131,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "linux-x86_64"
          },
@@ -4047,6 +4206,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          },
          {
             arch = "macosx-aarch64"
@@ -4126,6 +4288,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -4199,6 +4364,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -4269,6 +4437,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -4339,6 +4510,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -4409,6 +4583,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -4476,6 +4653,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          },
          {
             arch = "macosx-aarch64"
@@ -4548,6 +4728,9 @@ repository = {
             arch = "linux-x86_64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          }
       }
@@ -4614,6 +4797,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "linux-x86_64"
          },
@@ -4688,6 +4874,9 @@ repository = {
             arch = "macosx-aarch64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "linux-x86_64"
          }
       }
@@ -4758,6 +4947,9 @@ repository = {
             arch = "macosx-aarch64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "linux-x86_64"
          }
       }
@@ -4821,6 +5013,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          },
          {
             arch = "linux-x86_64"
@@ -4894,6 +5089,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -4959,6 +5157,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "linux-x86_64"
          },
@@ -5034,6 +5235,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -5087,6 +5291,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -5146,6 +5353,11 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         }
+      },
+      ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -5215,6 +5427,9 @@ repository = {
             arch = "linux-x86_64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          }
       }
@@ -5276,6 +5491,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          },
@@ -5351,6 +5569,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -5419,6 +5640,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "linux-x86_64"
          },
@@ -5494,6 +5718,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -5559,6 +5786,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "linux-x86_64"
          },
@@ -5634,6 +5864,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -5714,6 +5947,9 @@ repository = {
             arch = "linux-x86_64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          }
       }
@@ -5790,6 +6026,9 @@ repository = {
             arch = "linux-x86_64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          }
       }
@@ -5844,6 +6083,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -5892,6 +6134,11 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         }
+      },
+      ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -5960,6 +6207,9 @@ repository = {
          }
       },
       ["0.0.8-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "linux-x86_64"
          },
@@ -6034,6 +6284,9 @@ repository = {
             arch = "linux-x86_64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          }
       }
@@ -6102,6 +6355,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          },
          {
             arch = "macosx-aarch64"
@@ -6176,6 +6432,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          },
@@ -6253,6 +6512,9 @@ repository = {
       },
       ["0.0.7-1"] = {
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          },
          {
@@ -6322,6 +6584,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "linux-x86_64"
          },
@@ -6399,6 +6664,9 @@ repository = {
       },
       ["0.0.8-1"] = {
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          },
          {
@@ -6470,6 +6738,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          },
          {
             arch = "linux-x86_64"
@@ -6549,6 +6820,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -6616,6 +6890,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          },
          {
             arch = "macosx-aarch64"
@@ -6689,6 +6966,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -6759,6 +7039,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -6831,6 +7114,9 @@ repository = {
             arch = "macosx-aarch64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "linux-x86_64"
          }
       }
@@ -6901,6 +7187,9 @@ repository = {
             arch = "macosx-aarch64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "linux-x86_64"
          }
       }
@@ -6967,6 +7256,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          },
@@ -7039,6 +7331,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          },
          {
             arch = "macosx-aarch64"
@@ -7114,6 +7409,9 @@ repository = {
             arch = "linux-x86_64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          }
       }
@@ -7180,6 +7478,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          },
@@ -7255,6 +7556,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -7328,6 +7632,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -7404,6 +7711,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -7469,6 +7779,11 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         }
+      },
+      ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -7545,6 +7860,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -7621,6 +7939,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -7691,6 +8012,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -7756,6 +8080,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "linux-x86_64"
          },
@@ -7832,6 +8159,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -7938,6 +8268,9 @@ repository = {
             arch = "linux-x86_64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          }
       }
@@ -8015,6 +8348,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -8090,6 +8426,9 @@ repository = {
             arch = "linux-x86_64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          }
       }
@@ -8158,6 +8497,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          },
          {
             arch = "macosx-aarch64"
@@ -8237,6 +8579,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -8307,6 +8652,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          },
          {
             arch = "macosx-aarch64"
@@ -8380,6 +8728,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -8447,6 +8798,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          },
          {
             arch = "linux-x86_64"
@@ -8523,6 +8877,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -8598,6 +8955,9 @@ repository = {
             arch = "macosx-aarch64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "linux-x86_64"
          }
       }
@@ -8671,6 +9031,11 @@ repository = {
          {
             arch = "macosx-aarch64"
          }
+      },
+      ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         }
       }
    },
    ["tree-sitter-jq"] = {
@@ -8737,6 +9102,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          },
          {
             arch = "linux-x86_64"
@@ -8808,6 +9176,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          },
@@ -8889,6 +9260,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -8954,6 +9328,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "linux-x86_64"
          },
@@ -9025,6 +9402,11 @@ repository = {
          {
             arch = "linux-x86_64"
          }
+      },
+      ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         }
       }
    },
    ["tree-sitter-jsonnet"] = {
@@ -9089,6 +9471,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          },
          {
             arch = "macosx-aarch64"
@@ -9200,6 +9585,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -9276,6 +9664,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -9345,6 +9736,9 @@ repository = {
             arch = "linux-x86_64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          }
       }
@@ -9411,6 +9805,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "linux-x86_64"
          },
@@ -9479,6 +9876,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "linux-x86_64"
          },
@@ -9550,6 +9950,9 @@ repository = {
       },
       ["0.0.7-1"] = {
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "linux-x86_64"
          },
          {
@@ -9619,6 +10022,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "linux-x86_64"
          },
@@ -9694,6 +10100,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -9766,6 +10175,9 @@ repository = {
             arch = "linux-x86_64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          }
       }
@@ -9834,6 +10246,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          },
          {
             arch = "linux-x86_64"
@@ -9912,6 +10327,9 @@ repository = {
       },
       ["0.0.7-1"] = {
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "linux-x86_64"
          },
          {
@@ -9986,6 +10404,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -10046,6 +10467,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          },
@@ -10121,6 +10545,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -10190,6 +10617,9 @@ repository = {
             arch = "macosx-aarch64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "linux-x86_64"
          }
       }
@@ -10256,6 +10686,9 @@ repository = {
          }
       },
       ["0.0.8-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "linux-x86_64"
          },
@@ -10326,6 +10759,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          },
@@ -10400,6 +10836,9 @@ repository = {
             arch = "linux-x86_64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          }
       }
@@ -10468,6 +10907,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          },
          {
             arch = "macosx-aarch64"
@@ -10543,6 +10985,9 @@ repository = {
             arch = "linux-x86_64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          }
       }
@@ -10614,6 +11059,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -10635,6 +11083,9 @@ repository = {
       ["0.0.10-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          },
          {
             arch = "linux-x86_64"
@@ -10700,6 +11151,9 @@ repository = {
       ["0.0.10-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          },
          {
             arch = "linux-x86_64"
@@ -10824,6 +11278,9 @@ repository = {
       },
       ["0.0.7-1"] = {
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          },
          {
@@ -10893,6 +11350,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -10963,6 +11423,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -11033,6 +11496,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -11098,6 +11564,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          },
          {
             arch = "macosx-aarch64"
@@ -11171,6 +11640,9 @@ repository = {
             arch = "macosx-aarch64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "linux-x86_64"
          }
       }
@@ -11237,6 +11709,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -11301,6 +11776,9 @@ repository = {
             arch = "macosx-aarch64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "linux-x86_64"
          }
       }
@@ -11360,6 +11838,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          },
@@ -11431,6 +11912,11 @@ repository = {
          {
             arch = "macosx-aarch64"
          }
+      },
+      ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         }
       }
    },
    ["tree-sitter-nim_format_string"] = {
@@ -11495,6 +11981,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -11555,6 +12044,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          },
@@ -11621,6 +12113,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          },
@@ -11730,6 +12225,9 @@ repository = {
       },
       ["0.0.7-1"] = {
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "linux-x86_64"
          },
          {
@@ -11798,6 +12296,9 @@ repository = {
             arch = "linux-x86_64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          }
       }
@@ -11864,6 +12365,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -11918,6 +12422,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -11986,6 +12493,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -12046,6 +12556,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          },
@@ -12116,6 +12629,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -12215,6 +12731,9 @@ repository = {
             arch = "macosx-aarch64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "linux-x86_64"
          }
       }
@@ -12278,6 +12797,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          },
          {
             arch = "macosx-aarch64"
@@ -12346,6 +12868,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -12428,6 +12953,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -12485,6 +13013,11 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         }
+      },
+      ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -12555,6 +13088,9 @@ repository = {
             arch = "macosx-aarch64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "linux-x86_64"
          }
       }
@@ -12619,6 +13155,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          },
@@ -12685,6 +13224,9 @@ repository = {
       },
       ["0.0.7-1"] = {
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "linux-x86_64"
          },
          {
@@ -12749,6 +13291,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "linux-x86_64"
          },
@@ -12824,6 +13369,9 @@ repository = {
             arch = "macosx-aarch64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "linux-x86_64"
          }
       }
@@ -12887,6 +13435,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          },
          {
             arch = "linux-x86_64"
@@ -12954,6 +13505,9 @@ repository = {
             arch = "macosx-aarch64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "linux-x86_64"
          }
       }
@@ -13012,6 +13566,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -13072,6 +13629,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          },
@@ -13139,6 +13699,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          },
          {
             arch = "macosx-aarch64"
@@ -13214,6 +13777,11 @@ repository = {
          {
             arch = "linux-x86_64"
          }
+      },
+      ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         }
       }
    },
    ["tree-sitter-prolog"] = {
@@ -13280,6 +13848,9 @@ repository = {
       },
       ["0.0.7-1"] = {
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          },
          {
@@ -13344,6 +13915,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "linux-x86_64"
          },
@@ -13413,6 +13987,9 @@ repository = {
             arch = "macosx-aarch64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "linux-x86_64"
          }
       }
@@ -13474,6 +14051,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "linux-x86_64"
          },
@@ -13539,6 +14119,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          },
@@ -13609,6 +14192,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -13669,6 +14255,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          },
@@ -13734,6 +14323,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "linux-x86_64"
          },
@@ -13803,6 +14395,9 @@ repository = {
             arch = "macosx-aarch64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "linux-x86_64"
          }
       }
@@ -13866,6 +14461,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          },
          {
             arch = "linux-x86_64"
@@ -13935,6 +14533,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          },
@@ -14008,6 +14609,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -14073,6 +14677,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -14140,6 +14747,9 @@ repository = {
       },
       ["0.0.7-1"] = {
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          },
          {
@@ -14204,6 +14814,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "linux-x86_64"
          },
@@ -14277,6 +14890,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -14366,6 +14982,9 @@ repository = {
       ["0.0.9-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -14433,6 +15052,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -14498,6 +15120,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          }
@@ -14566,6 +15191,9 @@ repository = {
       },
       ["0.0.7-1"] = {
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          }
       }
@@ -14633,6 +15261,9 @@ repository = {
       },
       ["0.0.7-1"] = {
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          }
       }
@@ -14699,6 +15330,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          }
@@ -14771,6 +15405,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -14836,6 +15473,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          }
@@ -14904,6 +15544,9 @@ repository = {
       },
       ["0.0.7-1"] = {
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          }
       }
@@ -14955,6 +15598,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -15022,6 +15668,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -15087,6 +15736,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          }
@@ -15154,6 +15806,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          }
@@ -15229,6 +15884,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -15296,6 +15954,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -15363,6 +16024,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -15436,6 +16100,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -15509,6 +16176,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -15530,6 +16200,9 @@ repository = {
       ["0.0.10-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       },
       ["0.0.2-1"] = {
@@ -15657,6 +16330,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -15746,6 +16422,9 @@ repository = {
       ["0.0.9-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -15813,6 +16492,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -15867,6 +16549,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          }
@@ -15941,6 +16626,9 @@ repository = {
       },
       ["0.0.8-1"] = {
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          }
       }
@@ -16011,6 +16699,9 @@ repository = {
       },
       ["0.0.7-1"] = {
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          }
       }
@@ -16078,6 +16769,9 @@ repository = {
       },
       ["0.0.7-1"] = {
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          }
       }
@@ -16144,6 +16838,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          }
@@ -16216,6 +16913,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -16283,6 +16983,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -16354,6 +17057,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          }
@@ -16429,6 +17135,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -16498,6 +17207,9 @@ repository = {
       },
       ["0.0.7-1"] = {
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          }
       }
@@ -16566,6 +17278,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -16635,6 +17350,9 @@ repository = {
       },
       ["0.0.7-1"] = {
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          }
       }
@@ -16701,6 +17419,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          }
@@ -16770,6 +17491,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -16835,6 +17559,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          }
@@ -16902,6 +17629,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          }
@@ -16977,6 +17707,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -17044,6 +17777,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -17111,6 +17847,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -17199,6 +17938,9 @@ repository = {
       },
       ["0.0.9-1"] = {
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          }
       }
@@ -17278,6 +18020,9 @@ repository = {
       ["0.0.8-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -17345,6 +18090,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -17418,6 +18166,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -17488,6 +18239,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -17555,6 +18309,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -17620,6 +18377,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          }
@@ -17694,6 +18454,9 @@ repository = {
       },
       ["0.0.7-1"] = {
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          }
       }
@@ -17760,6 +18523,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -17825,6 +18591,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          }
@@ -17899,6 +18668,9 @@ repository = {
       },
       ["0.0.7-1"] = {
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          }
       }
@@ -17965,6 +18737,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          }
@@ -18034,6 +18809,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          },
          {
             arch = "macosx-aarch64"
@@ -18107,6 +18885,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -18172,6 +18953,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          },
@@ -18244,6 +19028,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          },
          {
             arch = "linux-x86_64"
@@ -18319,6 +19106,9 @@ repository = {
       },
       ["0.0.7-1"] = {
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "linux-x86_64"
          },
          {
@@ -18388,6 +19178,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          },
@@ -18462,6 +19255,9 @@ repository = {
             arch = "linux-x86_64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          }
       }
@@ -18528,6 +19324,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          },
@@ -18602,6 +19401,11 @@ repository = {
          {
             arch = "linux-x86_64"
          }
+      },
+      ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         }
       }
    },
    ["tree-sitter-turtle"] = {
@@ -18668,6 +19472,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          },
          {
             arch = "macosx-aarch64"
@@ -18740,6 +19547,9 @@ repository = {
             arch = "linux-x86_64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          }
       }
@@ -18809,6 +19619,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          }
@@ -18887,6 +19700,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -18957,6 +19773,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -19029,6 +19848,9 @@ repository = {
             arch = "linux-x86_64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          }
       }
@@ -19095,6 +19917,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          },
@@ -19170,6 +19995,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -19240,6 +20068,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -19305,6 +20136,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "linux-x86_64"
          },
@@ -19379,6 +20213,9 @@ repository = {
             arch = "linux-x86_64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          }
       }
@@ -19436,6 +20273,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          },
          {
             arch = "linux-x86_64"
@@ -19509,6 +20349,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -19574,6 +20417,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          },
@@ -19644,6 +20490,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "linux-x86_64"
          },
@@ -19722,6 +20571,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -19798,6 +20650,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -19857,6 +20712,9 @@ repository = {
       ["0.0.7-1"] = {
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          },
          {
             arch = "macosx-aarch64"
@@ -19929,6 +20787,9 @@ repository = {
             arch = "linux-x86_64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          }
       }
@@ -19986,6 +20847,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -20051,6 +20915,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -20116,6 +20983,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "linux-x86_64"
          },
@@ -20186,6 +21056,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "linux-x86_64"
          },
@@ -20259,6 +21132,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          },
@@ -20339,6 +21215,9 @@ repository = {
             arch = "linux-x86_64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          }
       }
@@ -20410,6 +21289,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -20475,6 +21357,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          }
@@ -20547,6 +21432,9 @@ repository = {
          },
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -20612,6 +21500,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "linux-x86_64"
          },
@@ -20687,6 +21578,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    },
@@ -20758,6 +21652,9 @@ repository = {
          }
       },
       ["0.0.7-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "macosx-aarch64"
          },
@@ -20836,6 +21733,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       }
    }
