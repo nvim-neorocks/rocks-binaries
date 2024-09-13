@@ -10,7 +10,7 @@ local arch = arg[2]
 local luarocks_cmd
 if vim.uv.os_uname().sysname:lower():find("windows") then
   -- HACK: Hardcode luarocks path, as it can't seem to be found by vim.system.
-  luarocks_cmd = assert(vim.fn.glob("C:/Users/runneradmin/scoop/apps/luarocks/*/luarocks"), "luarocks executable not found")
+  luarocks_cmd = assert(vim.fn.glob("C:/Users/runneradmin/scoop/apps/luarocks/current/luarocks"), "luarocks executable not found")
 else
   luarocks_cmd = "luarocks"
 end
