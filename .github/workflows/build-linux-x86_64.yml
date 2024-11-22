@@ -92,6 +92,12 @@ jobs:
             ./scripts/pack_binary_rock.lua "tree-sitter-$lang" "linux-x86_64" \
               || echo "Skipping tree-sitter-$lang"
           done
+
+      - name: Install nightly Rust Toolchain
+        uses: actions-rust-lang/setup-rust-toolchain@v1
+        with:
+          toolchain: nightly
+
       - name: Regenerate Manifests and HTML
         if: always()
         run: luarocks-admin make-manifest --lua-version=5.1 .
