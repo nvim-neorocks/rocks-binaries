@@ -7503,6 +7503,9 @@ repository = {
    ["tree-sitter-circom"] = {
       ["0.0.1-1"] = {
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          },
          {
@@ -54124,6 +54127,9 @@ repository = {
       ["0.0.21-1"] = {
          {
             arch = "macosx-aarch64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       },
       ["0.0.3-1"] = {
@@ -82009,6 +82015,9 @@ repository = {
             arch = "linux-x86_64"
          },
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "macosx-aarch64"
          }
       },
@@ -88278,6 +88287,9 @@ repository = {
          }
       },
       ["0.0.32-1"] = {
+         {
+            arch = "macosx-x86_64"
+         },
          {
             arch = "linux-x86_64"
          },
