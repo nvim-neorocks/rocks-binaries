@@ -10020,6 +10020,9 @@ repository = {
       },
       ["0.0.31-1"] = {
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "win32-x86_64"
          },
          {
@@ -11811,6 +11814,9 @@ repository = {
          },
          {
             arch = "linux-x86_64"
+         },
+         {
+            arch = "macosx-x86_64"
          }
       },
       ["0.0.7-1"] = {
