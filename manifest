@@ -13720,6 +13720,9 @@ repository = {
       },
       ["0.0.47-1"] = {
          {
+            arch = "macosx-x86_64"
+         },
+         {
             arch = "linux-x86_64"
          },
          {
